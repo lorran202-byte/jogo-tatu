@@ -61,7 +61,8 @@ class WorldTest {
     fun cairNoBuracoTiraVida() {
         val w = world(".....", "..P..", "_____", "_____", "_____", ".....")
         val input = PlayerInput().apply { moveY = 1f }
-        run(w, 4f, input)
+        // depois de cair, para de andar para não cair de novo ao voltar
+        run(w, 4f, input) { if (w.state == WorldState.DYING) input.moveY = 0f }
         assertEquals(balance.startLives - 1, w.lives)
         assertEquals(WorldState.PLAYING, w.state)
     }
@@ -88,14 +89,13 @@ class WorldTest {
 
     @Test
     fun caranguejoMataSemGiroEMorreComGiro() {
-        val w = world(".....", "..P..", ".....", "..E..", ".....", ".....")
-        w.crabs[0].x = 0f
+        // caranguejo parado: só há chão na coluna do meio da linha dele
+        val w = world(".....", "..P..", ".....", "__E__", ".....", ".....")
         val input = PlayerInput().apply { moveY = 1f }
         run(w, 2f, input)
         assertTrue(w.state == WorldState.DYING || w.lives < balance.startLives)
 
-        val w2 = world(".....", "..P..", ".....", "..E..", ".....", ".....")
-        w2.crabs[0].x = 0f
+        val w2 = world(".....", "..P..", ".....", "__E__", ".....", ".....")
         val input2 = PlayerInput().apply { moveY = 1f }
         run(w2, 0.25f, input2)
         input2.spinPressed = true
