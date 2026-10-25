@@ -1,31 +1,31 @@
 id,area,funcao,prioridade,status
-F01,jogo,correr em 3D com câmera atrás do personagem,must,todo
-F02,jogo,pulo com altura variável + coyote time + buffer,must,todo
-F03,jogo,giro (bola) que quebra caixas e derruba inimigos,must,todo
-F04,jogo,caixa comum que dá açaí,must,todo
-F05,jogo,caixa de pulo,must,todo
-F06,jogo,caixa de checkpoint,must,todo
-F07,jogo,caixa de vida,should,todo
-F08,jogo,açaí solto para coletar; 100 = 1 vida,must,todo
-F09,jogo,inimigo caranguejo (anda de lado; giro ou pulo em cima derruba),must,todo
-F10,jogo,buracos e degraus; morrer volta ao checkpoint,must,todo
-F11,jogo,vidas e game over,must,todo
-F12,jogo,fim de fase com tempo e caixas quebradas,must,todo
-F13,toque,joystick flutuante com zona morta,must,todo
-F14,toque,botões Pular e Girar grandes,must,todo
-F15,toque,vibração em pulo/acerto/dano (desligável),should,todo
-F16,toque,ajustes: tamanho e transparência dos botões,must,todo
-F17,toque,modo canhoto,should,todo
+F01,jogo,correr em 3D com câmera atrás do personagem,must,feito
+F02,jogo,pulo com altura variável + coyote time + buffer,must,feito
+F03,jogo,giro (bola) que quebra caixas e derruba inimigos,must,feito
+F04,jogo,caixa comum que dá açaí,must,feito
+F05,jogo,caixa de pulo,must,feito
+F06,jogo,caixa de checkpoint,must,feito
+F07,jogo,caixa de vida,should,feito
+F08,jogo,açaí solto para coletar; 100 = 1 vida,must,feito
+F09,jogo,inimigo caranguejo (anda de lado; giro ou pulo em cima derruba),must,feito
+F10,jogo,buracos e degraus; morrer volta ao checkpoint,must,feito
+F11,jogo,vidas e game over,must,feito
+F12,jogo,fim de fase com tempo e caixas quebradas,must,feito
+F13,toque,joystick flutuante com zona morta,must,feito
+F14,toque,botões Pular e Girar grandes,must,feito
+F15,toque,vibração em pulo/acerto/dano (desligável),should,feito
+F16,toque,ajustes: tamanho e transparência dos botões,must,feito
+F17,toque,modo canhoto,should,feito
 F18,toque,arrastar botões para mudar a posição,should,todo
-F19,toque,pausa automática ao sair do app; botão voltar pausa,must,todo
-F20,telas,menu principal,must,todo
-F21,telas,pausa,must,todo
-F22,telas,ajustes (som/música/vibração/controles),must,todo
-F23,telas,fim de fase e game over,must,todo
-F24,audio,efeitos sonoros próprios,must,todo
-F25,audio,música própria,should,todo
-F26,jogo,salvar recorde (tempo/açaí/caixas),should,todo
-F27,jogo,sombra embaixo do personagem,should,todo
+F19,toque,pausa automática ao sair do app; botão voltar pausa,must,feito
+F20,telas,menu principal,must,feito
+F21,telas,pausa,must,feito
+F22,telas,ajustes (som/música/vibração/controles),must,feito
+F23,telas,fim de fase e game over,must,feito
+F24,audio,efeitos sonoros próprios,must,feito
+F25,audio,música própria,should,feito
+F26,jogo,salvar recorde (tempo/açaí/caixas),should,feito
+F27,jogo,sombra embaixo do personagem,should,feito
 F28,jogo,controle Bluetooth também,could,todo
 F29,jogo,fase de fuga (coco gigante rolando),could,todo
 F30,jogo,fase em visão lateral,could,todo
