@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'jogo-tatu'
+include 'core', 'android'
